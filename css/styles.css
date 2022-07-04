@@ -90,7 +90,7 @@ header {
 
 .custom-shape-divider-bottom-1653270028 {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   width: 100%;
   overflow: hidden;
