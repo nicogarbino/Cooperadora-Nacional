@@ -242,7 +242,7 @@ header {
   display: flex;
 }
 
-.pagar .mercadopago-button, .pagar2 .mercadopago-button  {
+.pagar-button .mercadopago-button {
   width: 100px;
   height: 45px;
   margin-left: 25px;
@@ -267,16 +267,36 @@ header {
 
 .pagar2 .mercadopago-button {
   margin-left: 0px;
-  margin-top: 40px;
+  margin-top: 40px;  
 }
 
-.pagar .mercadopago-button:hover, .pagar2 .mercadopago-button:hover  {
+.pagar-button .mercadopago-button:hover  {
   box-shadow: 1.3px 2.4px 20px rgba(0, 0, 0, 0.12),
     3.1px 5.9px 5.3px rgba(0, 0, 0, 0.028), 5.9px 11px 10px rgba(0, 0, 0, 0.035),
     10.5px 19.7px 17.9px rgba(0, 0, 0, 0.042),
     19.6px 36.8px 33.4px rgba(0, 0, 0, 0.05), 47px 88px 80px rgba(0, 0, 0, 0.07);
   color: var(--color_boton_texto);
   transform: scale(1.1);
+}
+
+.pagar3 {
+  position: fixed;
+  right: 15px;
+  bottom: 0px;
+  opacity: 0.8;
+
+}
+.pagar3:hover{
+  opacity: 1;
+}
+.pagar3 .mercadopago-button {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+}
+
+.pagar3 .mercadopago-button:active{
+  background: #e490429d;
 }
 
 /* Titulo HEADER*/
@@ -655,7 +675,6 @@ footer {
   }
 }
 
-
 .burger_menu {
   position: fixed;
   left: 0;
@@ -666,15 +685,17 @@ footer {
   z-index: 100;
   flex-direction: column;
   padding: 60px;  
+  
+  transition: transform 0.6s ease-out;
 }
 
 .burger_menu li {
   padding: 4vh !important;
 }
 
-
 .hidden {
   display: none !important;
+
 }
 
 html {

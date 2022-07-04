@@ -4,12 +4,20 @@ window.onscroll = function () {
   scroll = document.documentElement.scrollTop;
 
   nav_header = document.getElementById("nav_header");
+  pagar3_button = document.querySelector(".pagar3");
 
   if (scroll > window.innerHeight * 0.6) {
     nav_header.classList.add("nav_mod");
   } else {
     nav_header.classList.remove("nav_mod");
   }
+
+  if (scroll > window.innerHeight * 0.3) {
+    pagar3_button.classList.remove("hidden");
+  } else {
+    pagar3_button.classList.add("hidden");
+  }
+
 };
 
 /* HAMBURGER */
@@ -105,5 +113,15 @@ mp.checkout({
   render: {
     container: ".pagar2", // Indica el nombre de la clase donde se mostrará el botón de pago
     label: "Pago", // Cambia el texto del botón de pago (opcional)
+  },
+});
+
+mp.checkout({
+  preference: {
+    id: "840159631-339fabf4-a83a-42c3-bdbe-19bb3de58d5b",
+  },
+  render: {
+    container: ".pagar3", // Indica el nombre de la clase donde se mostrará el botón de pago
+    label: "Cuota", // Cambia el texto del botón de pago (opcional)
   },
 });
