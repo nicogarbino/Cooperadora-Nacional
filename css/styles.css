@@ -112,9 +112,7 @@ header {
 /** For mobile devices **/
 @media (max-width: 767px) {
   .custom-shape-divider-bottom-1656943251 svg {
-      width: calc(300% + 1.3px);
-      height: 68px;
-      margin-bottom: -40px;
+    display: none;
   }
 }
 .logo {
