@@ -279,21 +279,6 @@ header {
   transform: scale(1.1);
 }
 
-.pagar3 {
-  position: fixed;
-  right: 15px;
-  bottom: 0px;
-  opacity: 0.8;
-
-}
-.pagar3:hover{
-  opacity: 1;
-}
-.pagar3 .mercadopago-button {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  
-}
 
 .pagar3 .mercadopago-button:active{
   background: #e490429d;
@@ -314,10 +299,10 @@ header {
   color: var(--color_boton);
   letter-spacing: 0.15em;
   text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
-    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
-    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #29282885, 0 11px 0 #12121285,
-    0 12px 0 #29282885, 0 13px 0 #29282885, 0 14px 0 #12121285,
-    0 15px 0 #12121285, 0 22px 30px rgba(41, 41, 41, 0.9);
+  0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
+  0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #29282885, 0 11px 0 #12121285,
+  0 12px 0 #29282885, 0 13px 0 #29282885, 0 14px 0 #12121285,
+  0 15px 0 #12121285, 0 22px 30px rgba(41, 41, 41, 0.9);
 }
 
 .animate__animated.animate__backInLeft {
@@ -423,24 +408,24 @@ main {
   max-width: 850px;
   max-height: 1000px;
   box-shadow: 2.7px 2.8px 3px rgba(0, 0, 0, 0.014),
-    6.5px 6.7px 7.2px rgba(0, 0, 0, 0.323),
+  6.5px 6.7px 7.2px rgba(0, 0, 0, 0.323),
     12.3px 12.5px 13.6px rgba(0, 0, 0, 0.333),
     21.9px 22.3px 24.3px rgba(0, 0, 0, 0.046),
     40.9px 41.8px 45.5px rgba(0, 0, 0, 0.064),
     98px 100px 109px rgba(0, 0, 0, 0.11);
-  flex-wrap: wrap;
-}
-
-.text_information-quienesSomos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.titulo_quienesSomos {
-  color: var(--color_boton);
-  font-size: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .text_information-quienesSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titulo_quienesSomos {
+    color: var(--color_boton);
+    font-size: 4rem;
   letter-spacing: -4px;
 }
 
@@ -466,28 +451,28 @@ main {
     #b5deff 70%,
     #b5deff 87%,
     #f7d1ba 87%
-  );
-  background-size: 50%;
-  background-clip: text;
-  -webkit-background-clip: text;
-
-  animation: expand-rev 0.5s ease forwards;
-}
-
-.gradient-text:hover {
-  animation: expand 0.5s ease forwards;
-}
-
-@keyframes expand {
-  0% {
+    );
     background-size: 50%;
-    background-position: 0 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    animation: expand-rev 0.5s ease forwards;
   }
-  20% {
-    background-size: 55%;
-    background-position: 0 1em;
+  
+  .gradient-text:hover {
+    animation: expand 0.5s ease forwards;
   }
-  100% {
+  
+  @keyframes expand {
+    0% {
+      background-size: 50%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 55%;
+      background-position: 0 1em;
+    }
+    100% {
     background-size: 325%;
     background-position: -10em -4em;
   }
@@ -562,7 +547,7 @@ footer {
 /* NAVBAR */
 
 @media (max-width: 1080px){
-
+  
   .bars__menu{
     display: block;
     float: right;
@@ -573,10 +558,20 @@ footer {
   .menu ul.horizontal_links{
     display: none;
   }
-
+  .pagar3 {
+    position: fixed;
+    right: 15px;
+    bottom: 0px;
+    opacity: 0.8;
+  }
+  .pagar3:hover{
+    opacity: 1;
+  }
+  .pagar3 .mercadopago-button {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;  
+  }
 }
-
-
 
 /* NOTICIAS */
 
