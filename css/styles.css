@@ -88,9 +88,9 @@ header {
   background-attachment: fixed;
 }
 
-.custom-shape-divider-bottom-1653270028 {
+.custom-shape-divider-bottom-1656943251 {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -98,18 +98,24 @@ header {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1653270028 svg {
+.custom-shape-divider-bottom-1656943251 svg {
   position: relative;
   display: block;
-  width: calc(115% + 1.3px);
-  height: 10vh;
-  transform: rotateY(180deg);
+  width: calc(105% + 1.3px);
+  height: 144px;
 }
 
-.custom-shape-divider-bottom-1653270028 .shape-fill {
-  fill: var(--fondo_main);
+.custom-shape-divider-bottom-1656943251 .shape-fill {
+  fill: #D7D9D98E;
 }
 
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1656943251 svg {
+      width: calc(300% + 1.3px);
+      height: 68px;
+  }
+}
 .logo {
   display: flex;
 }
@@ -646,9 +652,12 @@ footer {
   }
 }
 
-@media (max-width: 385px){
+@media (max-width: 395px){
   .titulo_quienesSomos{
     font-size: 2.3rem;
+  }
+  .container_quienesSomos {
+    margin: 0px 15px;   
   }
 }
 
